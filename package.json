@@ -1,9 +1,14 @@
 {
   "name": "torobche",
   "version": "1.0.0",
-  "description": "Sassy Pug",
+  "description": "An ingenius static website builder for rapid prototyping",
+  "private": true,
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ashkantaravati/torobche"
+  },
   "main": "index.js",
-  "watch":{
+  "watch": {
     "build": {
       "patterns": [
         "src"
@@ -17,8 +22,19 @@
     "watch": "npm-watch build",
     "build": "pug -o dist src/templates"
   },
-  "author": "",
-  "license": "ISC",
+  "author": {
+    "name": "Ashkan Taravati",
+    "email": "ashkan.taravati@gmail.com",
+    "url": "https://linkedin.com/in/ashkantaravati"
+  },
+  "contributors": [
+    {
+      "name": "Parisa Qomi",
+      "email": "parisaq97@gmail.com",
+      "url": "http://www.parisaqomi.ir"
+    }
+  ],
+  "license": "Apache-2.0",
   "dependencies": {
     "bootstrap": "^5.0.0-beta1",
     "npm-watch": "^0.7.0"
