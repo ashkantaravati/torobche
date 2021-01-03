@@ -1,0 +1,30 @@
+{
+  "name": "torobche",
+  "version": "1.0.0",
+  "description": "Sassy Pug",
+  "main": "index.js",
+  "watch":{
+    "build": {
+      "patterns": [
+        "src"
+      ],
+      "extensions": "ts,html,scss,js,pug,css",
+      "quiet": false
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-watch build",
+    "build": "pug -o dist src/templates"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta1",
+    "npm-watch": "^0.7.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.11.1",
+    "webpack-cli": "^4.3.1"
+  }
+}

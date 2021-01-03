@@ -1,0 +1,17 @@
+//- index.pug
+extends _layout.pug
+
+block head
+    title Main Page | #{siteName}
+block content
+    <p> p tag</p>
+    form(action="/")
+        .form-row
+            .form-group.col-md-6
+                label(for="inputEmail4") Email
+                input(type="email",placeholder="Email").form-control#inputEmail4
+            .form-group.col-md-6
+                label(for="inputEmail4") Email
+                input(type="password",placeholder="Password").form-control#inputPassword4
+                button(type="submit").btn.btn-primary Sign in
+
